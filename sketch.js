@@ -62,8 +62,8 @@ house.displace(water)
 drawSprites();
 fill("black")
 textSize(20)
-if (car.isTouching(house)){if (deliver==true){score++;house.visible=false;deliver=false;shop.visible=true;shop.x=random(25,375);shop.y=random(25,375)}}
-if (car.isTouching(shop)){if(deliver==false){l=0
+if (car.isTouching(house)){if (deliver==true){score++;house.visible=false;deliver=false;shop.visible=true;}}
+if (car.isTouching(shop)){if(deliver==false){l=0;shop.x=random(25,375);shop.y=random(25,375);
 rocks.destroyEach()
 while(4>l){
 swap=createSprite(random(25,375),random(25,375),30,30)
