@@ -62,7 +62,7 @@ house.displace(water)
 drawSprites();
 fill("black")
 textSize(20)
-if (car.isTouching(house)){if (deliver==true){score++;house.visible=false;deliver=false;shop.visible=true;}}
+if (car.isTouching(house)){if (deliver==true){score++;house.visible=false;deliver=false;shop.visible=true;shop.x=random(25,375);shop.y=random(25,375)}}
 if (car.isTouching(shop)){if(deliver==false){l=0
 rocks.destroyEach()
 while(4>l){
