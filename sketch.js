@@ -116,17 +116,17 @@ swap.velocityY=0-Math.abs(swap.rotation-270)/15}}}}}}}
 lazers.add(swap)}}
 if (car.rotation>360){car.rotation=360}
 if (car.rotation<0){car.rotation=0}
-if(keyDown("LEFT_ARROW")){
+if(keyDown("a")){
 car.velocityX=0;
 car.velocityY=0;
 if (car.rotation==0){car.rotation=360}
 car.rotation=car.rotation-7;}
-if(keyDown("RIGHT_ARROW")){
+if(keyDown("d")){
 car.velocityX=0;
 car.velocityY=0;
 if (car.rotation==360){car.rotation=0}
 car.rotation=car.rotation+7;}
-if (keyDown("UP_ARROW")){
+if (keyDown("w")){
 if (car.rotation==90){car.velocityX=6;}else{
 if (car.rotation==180){car.velocityY=6;}else{
 if (car.rotation==270){car.velocityX=-6;}else{
@@ -149,3 +149,4 @@ if (car.velocityX>0){car.velocityX=car.velocityX-0.25;}
 if (car.velocityY>0){car.velocityY=car.velocityY-0.25}
 if (car.velocityX<0){car.velocityX=car.velocityX+0.25;}
 if (car.velocityY<0){car.velocityY=car.velocityY+0.25}}}
+
